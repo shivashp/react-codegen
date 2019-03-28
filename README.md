@@ -8,13 +8,14 @@ React codegen is an interactive CLI to generate boilerplate code for views, redu
 
 ### Init:
 This will install all the dependencies required for your project ( Redux, Redux-saga, Redux-logger, Redux-actions, React-redux, @reach/router).
+
 `react-codegen init`
 
 **Note:** *You need to have yarn installed for init to work*
 
 ### Usage:
 
-In your root folder of react project run `react-codegen`. Once you generate the first view and store configuration by selecting redux. Go to App.js and wrap routes with Redux Provider with proper store.
+In your root folder of react project run `react-codegen`. Generate at least one view and one redux which will generate all the missing configurations then go to App.js and wrap routes with Redux Provider with proper store.
 
 ```javascript
 import React, { Component } from "react";
@@ -37,9 +38,13 @@ class App extends Component {
 export default App;
 ```
 
+Now you can run `react-codegen` again to generate more redux files, views.
+
 ### Libraries Used
 
 - **Routing**: Reach Router
 - **Testing**: Jest + Enzyme
 - **State Mangement**: Redux
 - **Side Effects**: Redux-saga
+
+*Note: If you want to contribute or face any problems. Open a issue in github repository*
